@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taylor Swift Quiz Game 🎵</title>
+    <title>Quiz da Taylor Swift 🎵</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div id="start-screen" class="screen">
-            <h1>Taylor Swift Quiz Game 🎵</h1>
-            <p>Test your knowledge about Taylor's music, life, and career!</p>
-            <button id="start-btn" class="btn">Start Quiz</button>
+            <h1>Quiz da Taylor Swift 🎵</h1>
+            <p>Teste seus conhecimentos sobre a música, vida e carreira da Taylor!</p>
+            <button id="start-btn" class="btn">Começar Quiz</button>
         </div>
 
         <div id="quiz-screen" class="screen hidden">
             <div class="header">
-                <div id="progress">Question <span id="current-question">1</span>/<span id="total-questions">10</span></div>
-                <div id="score">Score: <span id="score-value">0</span></div>
+                <div id="progress">Pergunta <span id="current-question">1</span>/<span id="total-questions">10</span></div>
+                <div id="score">Pontuação: <span id="score-value">0</span></div>
             </div>
             
             <div id="question-container">
@@ -30,9 +30,9 @@
         </div>
 
         <div id="end-screen" class="screen hidden">
-            <h2>Quiz Complete! 🎉</h2>
-            <p>Your final score: <span id="final-score">0</span>/<span id="max-score">10</span></p>
-            <button id="restart-btn" class="btn">Play Again</button>
+            <h2>Quiz Concluído! 🎉</h2>
+            <p>Sua pontuação final: <span id="final-score">0</span>/<span id="max-score">10</span></p>
+            <button id="restart-btn" class="btn">Jogar Novamente</button>
         </div>
     </div>
     <script src="./script.js"></script>

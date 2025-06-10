@@ -1,51 +1,51 @@
 const questions = [
     {
-        question: "What year was Taylor Swift born?",
+        question: "Em que ano Taylor Swift nasceu?",
         options: ["1987", "1988", "1989", "1990"],
         correct: 2
     },
     {
-        question: "Which album features the song 'Shake It Off'?",
+        question: "Em qual álbum está a música 'Shake It Off'?",
         options: ["Fearless", "Speak Now", "1989", "Red"],
         correct: 2
     },
     {
-        question: "What was Taylor Swift's first album?",
+        question: "Qual foi o primeiro álbum da Taylor Swift?",
         options: ["Fearless", "Taylor Swift", "Speak Now", "Red"],
         correct: 1
     },
     {
-        question: "Which song won Taylor Swift her first Grammy for Song of the Year?",
+        question: "Qual música ganhou o primeiro Grammy da Taylor Swift para Música do Ano?",
         options: ["Love Story", "You Belong With Me", "Mean", "Blank Space"],
         correct: 2
     },
     {
-        question: "What is the name of Taylor Swift's first cat?",
+        question: "Qual é o nome do primeiro gato da Taylor Swift?",
         options: ["Meredith", "Olivia", "Benjamin", "Dusty"],
         correct: 0
     },
     {
-        question: "Which album features the song 'All Too Well'?",
+        question: "Em qual álbum está a música 'All Too Well'?",
         options: ["Speak Now", "Red", "1989", "Fearless"],
         correct: 1
     },
     {
-        question: "What is the name of Taylor Swift's re-recorded version of 'Fearless'?",
+        question: "Qual é o nome da versão regravada do álbum 'Fearless' pela Taylor Swift?",
         options: ["Fearless (Taylor's Version)", "Fearless (Re-recorded)", "Fearless (2021)", "Fearless (New Version)"],
         correct: 0
     },
     {
-        question: "Which song features the lyrics 'I'm the problem, it's me'?",
+        question: "Em qual música aparece a letra 'I'm the problem, it's me'?",
         options: ["Anti-Hero", "Blank Space", "Look What You Made Me Do", "You Need To Calm Down"],
         correct: 0
     },
     {
-        question: "What was Taylor Swift's first number one single on the Billboard Hot 100?",
+        question: "Qual foi o primeiro single número um da Taylor Swift na Billboard Hot 100?",
         options: ["Love Story", "You Belong With Me", "We Are Never Ever Getting Back Together", "Shake It Off"],
         correct: 2
     },
     {
-        question: "Which album features the song 'Lover'?",
+        question: "Em qual álbum está a música 'Lover'?",
         options: ["Reputation", "Lover", "Folklore", "Evermore"],
         correct: 1
     }
@@ -109,13 +109,13 @@ function selectAnswer(selectedIndex) {
 
     if (selectedIndex === question.correct) {
         selectedOption.classList.add('correct');
-        feedback.textContent = 'Correct! 🎉';
+        feedback.textContent = 'Correto! 🎉';
         feedback.className = 'correct';
         score++;
     } else {
         selectedOption.classList.add('incorrect');
         correctOption.classList.add('correct');
-        feedback.textContent = 'Incorrect! The correct answer was: ' + question.options[question.correct];
+        feedback.textContent = 'Incorreto! A resposta correta era: ' + question.options[question.correct];
         feedback.className = 'incorrect';
     }
 
